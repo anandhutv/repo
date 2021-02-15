@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Create Job-Opening</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="style.css" type="text/css" rel="stylesheet">
+      <script src="./js/jquery-3.5.1.min.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/stackpath.bootstrap.min.js"></script>
+      <!-- include summernote css/js -->
+      <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="./css/summernote-bs4.min.css"> -->
+      <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+      <!-- <script src="./js/summernote-bs4.min.js"></script> -->
+   </head>
+   <body>
+      <!-- <div style="margin-left: 200px;" class="app-container d-flex justify-content-between">
+         <h1>asdasdbkasdn</h1>
+         <button>Hash</button>
+         
+         </div> -->
+      <header style="box-shadow: 0px 8px 25px #bfbfbf;">
+         <nav class=" border-bottom pb-3">
+            <div class="container d-flex justify-content-between" style="padding-top: 11px;">
+               <div>
+                  <img style="height: 60px;" src="images/pepsi.svg">
+                  <a class="logo-dashboard" href="Dashboard">Dashboard</a>
+               </div>
+               <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Test user
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div class="container mt-3">
+            <div class="row">
+               <div class="col-6">
+                  <h4 class="title1 mb-4 mt-3">Create Job-Opening</h4>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- SECTION -->
+      <div class="container form-pt">
+         <div class="row">
+            <div class="col-lg-12">
+               <form id="signup-form" method="POST">
+                  <div class="form-group">
+                     <label for="Job-Title">Job Title:</label>
+                     <input type="text" class="form-control" id="Job-Title" name="Job_Title">
+                  </div>
+                  <div class="form-group">
+                     <label  for="Summary">Address:</label>
+                     <input type="text" class="form-control" id="Summary" name="Summary">
+                  </div>
+                  <div class="form-group">
+                     <label for="Full-Details">Full Details:</label>
+                     <input type="text" class="form-control" id="Full-Details" name="Full_Details">
+                  </div>
+                  <div class="form-group">
+                     <label for="Closing-Date">Closing Date:</label>
+                     <input type="date" class="form-control" id="Closing-Date" name="Closing_Date">
+                  </div>
+                  <div class="form-group">
+                     <label for="location">Location:</label>
+                     <input type="text" class="form-control" id="location" name="location">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label" for="editor">Message:</label>
+                     <textarea id="summernote" class="form-control" style="height:120px;">
+                     </textarea>
+                  </div>
+                  <button class="btn btn-primary mt-3">Submit</button>
+                  <button class="btn btn-danger mt-3 form_reset" type="button">Clear</button>
+               </form>
+               <div class="container">
+                  <h1>Hello Operations</h1>
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et excepturi qui? Error excepturi accusamus incidunt! Maiores nam eius repudiandae.</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         $('#summernote').summernote({
+           placeholder: 'Hello Bootstrap 4',
+           tabsize: 2,
+           height: 100
+         });
+      </script>
+      <script src="js/bootstrap.min.jquery.js"></script>
+      <script src="js/bootstrap.min.popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="jquery.validate.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
